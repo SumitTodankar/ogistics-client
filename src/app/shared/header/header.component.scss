@@ -1,0 +1,21 @@
+header {
+  padding: 30px 30px;
+  background: transparent;
+
+  .bi {
+    color: #fff;
+    cursor: pointer;
+    &.f-2 {
+      font-size: 2rem;
+      // color: white;
+    }
+  }
+
+  .right-btns {
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+  }
+}

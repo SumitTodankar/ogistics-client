@@ -1,0 +1,18 @@
+<aside id="sidebar" [ngClass]="showSidebar ? 'active' : ''">
+  <div class="close-btn d-flex justify-content-end pe-4">
+    <i class="bi bi-x-lg cursorpt" (click)="closeNav()"></i>
+  </div>
+  <div class="list mt-3">
+    <ul>
+      <li *ngFor="let item of listItems">
+        <a
+          class="anc cursorpt"
+          [routerLink]="item.linkTo"
+          (click)="navTo(item)"
+        >
+          {{ item.label }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</aside>

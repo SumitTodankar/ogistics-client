@@ -1,0 +1,17 @@
+<div
+  class="container-fluid main-layout"
+  [ngClass]="enableBg ? 'home-activated' : ''"
+>
+  <app-loader *ngIf="false"></app-loader>
+  <app-sidebar
+    *ngIf="showAside"
+    [showAside]="showAside"
+    (emitSidebar)="toggleSidebar($event)"
+  ></app-sidebar>
+  <app-header
+    [showAside]="showAside"
+    (emitSidebar)="toggleSidebar($event)"
+  ></app-header>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>

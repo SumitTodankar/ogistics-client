@@ -1,0 +1,36 @@
+#sidebar {
+  width: 0;
+  overflow-x: hidden;
+
+  &.active {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 2rem 1rem;
+    background-color: #222227;
+    z-index: 999;
+    color: #fff;
+    overflow-x: visible;
+    transition: 1.2s width ease-in-out;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      gap: 1rem;
+
+      li {
+        .anc {
+          text-decoration: none;
+          color: #fff;
+
+          &:hover {
+            color: #0f98f8;
+          }
+        }
+      }
+    }
+  }
+}

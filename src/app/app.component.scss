@@ -1,0 +1,11 @@
+.main-layout {
+  overflow: hidden;
+
+  &.home-activated {
+    background-image: url("../assets/images/banner.png");
+    background-repeat: no-repeat;
+    background-size: auto 94%;
+    background-position: right top;
+    min-height: 100vh;
+  }
+}

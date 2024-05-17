@@ -1,0 +1,52 @@
+<section class="home-layout">
+  <div class="banner row">
+    <div class="sec col-md-5 col-lg-5 col-xl-5">
+      <h1 class="colorize-title">Best Logistic Company</h1>
+      <span class="caption"
+        >Contrary to popular belief, Lorem Ipsum is not simply random text. It
+        has i</span
+      >
+      <a class="read_more">Contact Us</a>
+    </div>
+    <div class="sec col-md-3 col-lg-3 col-xl-3">
+      <img
+        src="../../../../assets/images/track.png"
+        alt="Track"
+        class="truck"
+      />
+    </div>
+    <div class="sec col-md-4 col-lg-4 col-xl-4">
+      <form
+        id="rec-form"
+        [formGroup]="quoteForm"
+        (submit)="submitForm(quoteForm)"
+      >
+        <h6 class="title">Professional Services</h6>
+        <h4 class="sub-title">Get your transparent quote</h4>
+
+        <div class="form-field mt-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Location"
+            formControlName="location"
+          />
+        </div>
+        <div class="form-field mt-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="To destination"
+          />
+        </div>
+        <div class="form-field mt-3">
+          <input type="text" class="form-control" placeholder="Email" />
+        </div>
+        <div class="form-field mt-3">
+          <input type="text" class="form-control" placeholder="Phone Number" />
+        </div>
+        <button type="submit" class="btn btn-dark mt-3">Get Quote ></button>
+      </form>
+    </div>
+  </div>
+</section>

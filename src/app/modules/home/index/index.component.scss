@@ -1,0 +1,75 @@
+.home-layout {
+  //   padding: 40px;
+  //   background-image: url("../../../../assets/images/banner.png");
+  //   background-repeat: no-repeat;
+  //   background-size: auto 60%;
+  //   background-position: right top;
+  // min-height: 1150px;
+
+  .banner {
+    padding: 120px 70px;
+    .sec {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .colorize-title {
+        color: #0f98f8;
+        text-transform: capitalize;
+        font-family: inherit;
+        font-weight: 800;
+        font-size: 60px;
+      }
+
+      .caption {
+        margin-top: 60px;
+        font-family: inherit;
+        font-weight: 400;
+        padding-right: 20%;
+      }
+
+      .read_more {
+        margin-top: 1rem;
+        position: relative;
+        align-self: flex-start;
+        text-decoration: none;
+        color: #333;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 24px;
+        &:after {
+          position: absolute;
+          content: "";
+          height: 1px;
+          width: 4rem;
+          background-color: #111;
+          top: 50%;
+          right: -60%;
+        }
+      }
+
+      // .truck {
+      //   width: 450px;
+      //   height: 220px;
+      // }
+
+      #rec-form {
+        padding-left: 25%;
+        color: #fff;
+
+        .title {
+          font-size: 17px;
+        }
+
+        .sub-title {
+          font-size: 23px;
+        }
+
+        .form-control {
+          width: 75%;
+        }
+      }
+    }
+  }
+}
